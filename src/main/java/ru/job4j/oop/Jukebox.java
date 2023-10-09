@@ -12,6 +12,7 @@ public class Jukebox {
                 break;
             default:
                 System.out.println("Песня не найдена");
+                break;
         }
     }
 
