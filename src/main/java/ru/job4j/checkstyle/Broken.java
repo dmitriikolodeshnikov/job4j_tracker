@@ -5,9 +5,9 @@ public class Broken {
 
     private int sizeOfEmpty = 10;
 
-    public static final String NEW_VALUE = "";
+    private static final String NEW_VALUE = "";
 
-    public String surname;
+    private String surname;
 
     public void broken() {
     }
