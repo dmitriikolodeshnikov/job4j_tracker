@@ -20,14 +20,14 @@ public class Library {
         books[3] = temp;
 
         for (int i = 0; i < books.length; i++) {
-            Book boo = books[i];
-            System.out.println(boo.getName() + " - " + boo.getCount());
+            Book book = books[i];
+            System.out.println(book.getName() + " - " + book.getCount());
 
         }
         for (int i = 0; i < books.length; i++) {
-            Book boo = books[i];
-            if (boo.getName().equals("Clean code")) {
-                System.out.println(boo.getName() + " - " + boo.getCount());
+            Book book = books[i];
+            if ("Clean code".equals(book.getName())) {
+                System.out.println(book.getName() + " - " + book.getCount());
             }
         }
     }
