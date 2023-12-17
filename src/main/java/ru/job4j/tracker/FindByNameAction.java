@@ -14,7 +14,7 @@ public class FindByNameAction implements UserAction {
 
     @Override
     public boolean execute(Input input, Tracker tracker) {
-        System.out.println("=== Вывод заявки по имени ===");
+        out.println("=== Вывод заявки по имени ===");
         String name = input.askStr("Введите имя: ");
         Item[] items = tracker.findByName(name);
         if (items.length > 0) {
@@ -22,7 +22,7 @@ public class FindByNameAction implements UserAction {
                 System.out.println(item);
             }
         } else {
-            System.out.println("Заявки с именем: " + name + " не найдены");
+            out.println("Заявки с именем: " + name + " не найдены");
         }
         return true;
     }
