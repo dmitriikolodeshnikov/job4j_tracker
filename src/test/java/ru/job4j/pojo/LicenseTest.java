@@ -5,6 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class LicenseTest {
 
+    @SuppressWarnings("checkstyle:WhitespaceAfter")
     @Test
     public void eqName() {
         License first = new License();
