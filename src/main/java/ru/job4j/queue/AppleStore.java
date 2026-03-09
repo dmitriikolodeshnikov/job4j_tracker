@@ -13,31 +13,19 @@ public class AppleStore {
     }
 
     public String getLastHappyCustomer() {
-        String lastHappyCustomer = "";
-        int availableItems = count;
-        for (int i = 0; i < queue.size() + count; i++) {
-            Customer customer = queue.poll();
-            if (availableItems > 0) {
-                lastHappyCustomer = customer.name();
-                availableItems--;
-            } else {
-                break;
-            }
+        String lastCustomer = "";
+        for (int i = 0; i < count; i++) {
+             lastCustomer = queue.poll().name();
         }
-        return lastHappyCustomer;
+        return lastCustomer;
     }
 
     public String getFirstUpsetCustomer() {
-        int availableItems = count;
-        for (int i = 0; i < queue.size() + count; i++) {
-            Customer customer = queue.poll();
-            if (availableItems == 0) {
-               return customer.name();
-
-            }
-            availableItems--;
+        String firstCustomer = "";
+        for (int i = 0; i <= count; i++) {
+            firstCustomer = queue.poll().name();
 
         }
-        return "";
+        return firstCustomer;
     }
 }
